@@ -40,6 +40,7 @@ while true; do
     echo "18. Ramadhan Adventure"
     echo "19. Ramadhan Snake"
     echo "20. Ramadhan Hub (Ultimate)"
+    echo "21. Sahur
     echo "0. Keluar"
     echo ""
     echo "========================================"
@@ -67,6 +68,7 @@ while true; do
         18) bash modules/ramadhan_adventure.sh ;;
         19) bash modules/ramadhan_snake.sh ;;
         20) bash modules/ramadhan_hub.sh ;;
+        21) bash modules/sahur.sh ;;
         0) echo "Keluar..."; exit ;;
         *) echo "Pilihan salah!"; sleep 1 ;;
     esac
