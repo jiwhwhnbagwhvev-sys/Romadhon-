@@ -3,22 +3,25 @@
 green='\033[1;32m'
 nc='\033[0m'
 
-clear
-echo -e $green
+# =================== FUNGSI CLEAR + LOGO ===================
+function tampil_logo() {
+    clear
+    echo -e $green
+    echo '
+██████╗  █████╗ ███╗   ███╗
+██╔══██╗██╔══██╗████╗ ████║
+██████╔╝███████║██╔████╔██║
+██╔══██╗██╔══██║██║╚██╔╝██║
+██║  ██║██║  ██║██║ ╚═╝ ██║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝
+'
+    echo "🌙 ROMADHON TERMINAL MENU 🌙"
+    echo "========================================"
+}
 
-# ================= LOGO TERMINAL =================
-echo "██████╗  █████╗ ███╗   ███╗"
-echo "██╔══██╗██╔══██╗████╗ ████║"
-echo "██████╔╝███████║██╔████╔██║"
-echo "██╔══██╗██╔══██║██║╚██╔╝██║"
-echo "██║  ██║██║  ██║██║ ╚═╝ ██║"
-echo "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝"
-echo ""
-echo "🌙 ROMADHON TERMINAL MENU 🌙"
-echo "========================================"
-
-# ================= LOOP MENU =================
+# =================== LOOP MENU UTAMA ===================
 while true; do
+    tampil_logo
     echo ""
     echo "1. Niat Puasa"
     echo "2. Doa Berbuka"
@@ -40,11 +43,10 @@ while true; do
     echo "18. Ramadhan Adventure"
     echo "19. Ramadhan Snake"
     echo "20. Ramadhan Hub (Ultimate)"
-    echo "21. Sahur
     echo "0. Keluar"
     echo ""
     echo "========================================"
-    
+
     read -p "Pilih menu: " pilih
 
     case $pilih in
@@ -68,21 +70,11 @@ while true; do
         18) bash modules/ramadhan_adventure.sh ;;
         19) bash modules/ramadhan_snake.sh ;;
         20) bash modules/ramadhan_hub.sh ;;
-        21) bash modules/sahur.sh ;;
         0) echo "Keluar..."; exit ;;
         *) echo "Pilihan salah!"; sleep 1 ;;
     esac
 
-    # Bersihkan layar & tampilkan logo lagi sebelum menu berikutnya
-    clear
-    echo -e $green
-    echo "██████╗  █████╗ ███╗   ███╗"
-    echo "██╔══██╗██╔══██╗████╗ ████║"
-    echo "██████╔╝███████║██╔████╔██║"
-    echo "██╔══██╗██╔══██║██║╚██╔╝██║"
-    echo "██║  ██║██║  ██║██║ ╚═╝ ██║"
-    echo "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝"
     echo ""
-    echo "🌙 ROMADHON TERMINAL MENU 🌙"
-    echo "========================================"
-done   
+    echo "Tekan Enter untuk kembali ke menu..."
+    read
+done
