@@ -1,9 +1,9 @@
- #!/bin/bash
+        #!/bin/bash
 
 green='\033[1;32m'
 nc='\033[0m'
 
-# =================== FUNGSI CLEAR + LOGO ===================
+# =================== FUNGSI LOGO ===================
 function tampil_logo() {
     clear
     echo -e $green
@@ -60,7 +60,7 @@ while true; do
         8) bash modules/hadis_puasa.sh ;;
         9) bash modules/tips_puasa.sh ;;
         10) bash modules/ramadhan_azan.sh ;;
-        11) bash modules/web.sh ;;         # atau webdash.sh jika itu yang dimaksud
+        11) bash modules/web.sh ;;         # ganti webdash.sh jika itu yang diinginkan
         12) bash modules/tasbih_otomatis.sh ;;
         13) bash modules/kata_islami.sh ;;
         14) bash modules/target_ibadah.sh ;;
