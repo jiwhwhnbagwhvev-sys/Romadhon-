@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 green='\033[1;32m'
 nc='\033[0m'
@@ -16,10 +16,10 @@ echo "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝"
 echo ""
 echo "🌙 ROMADHON TERMINAL MENU 🌙"
 echo "========================================"
-echo ""
 
+# ================= LOOP MENU =================
 while true; do
-    # ================= MENU PANJANG =================
+    echo ""
     echo "1. Niat Puasa"
     echo "2. Doa Berbuka"
     echo "3. Jadwal Imsak & Buka"
@@ -35,7 +35,6 @@ while true; do
     echo "13. Kata Islami"
     echo "14. Target Ibadah"
     echo "15. Pengingat Sholat"
-    # Tambahkan modul 16–20 sesuai repo
     echo "16. Ramadhan Sultan"
     echo "17. Game Ramadhan"
     echo "18. Ramadhan Adventure"
@@ -44,35 +43,35 @@ while true; do
     echo "0. Keluar"
     echo ""
     echo "========================================"
-
+    
     read -p "Pilih menu: " pilih
 
     case $pilih in
-    1) echo "Nawaitu shauma ghadin lillahi ta'ala"; read ;;
-    2) echo "Allahumma laka shumtu..."; read ;;
-    3) echo "Imsak 04:30, Subuh 04:40, Maghrib 18:00"; read ;;
-    4) echo "Tetap semangat ibadah!"; read ;;
-    5) for i in {1..33}; do echo "Subhanallah ($i)"; sleep 0.2; done; read ;;
-    6) date +"%H:%M:%S"; read ;;
-    7) echo "Ramadhan bulan ke-9 Islam"; read ;;
-    8) echo "Puasa adalah perisai (HR. Bukhari)"; read ;;
-    9) echo "• Sahur cukup"; echo "• Jangan marah"; echo "• Perbanyak doa"; read ;;
-    10) bash modules/ramadhan_azan.sh ;;       
-    11) bash modules/web.sh ;;                 
-    12) bash modules/tasbih_otomatis.sh ;;     
-    13) bash modules/kata_islami.sh ;;         
-    14) bash modules/target_ibadah.sh ;;       
-    15) bash modules/pengingat_sholat.sh ;;    
-    16) bash modules/ramadhan_sultan.sh ;;
-    17) bash modules/game_ramadhan.sh ;;       
-    18) bash modules/ramadhan_adventure.sh ;;
-    19) bash modules/ramadhan_snake.sh ;;
-    20) bash modules/ramadhan_hub.sh ;;
-    0) echo "Keluar..."; exit ;;
-    *) echo "Pilihan salah!"; sleep 1 ;;
+        1) bash modules/niat_puasa.sh ;;
+        2) bash modules/bukapuasa.sh ;;
+        3) bash modules/jadwal_imsak.sh ;;
+        4) bash modules/motivasi_ramadhan.sh ;;
+        5) bash modules/dzikir_digital.sh ;;
+        6) bash modules/cek_jam.sh ;;
+        7) bash modules/info_ramadhan.sh ;;
+        8) bash modules/hadis_puasa.sh ;;
+        9) bash modules/tips_puasa.sh ;;
+        10) bash modules/ramadhan_azan.sh ;;
+        11) bash modules/web.sh ;;         # atau webdash.sh jika itu yang dimaksud
+        12) bash modules/tasbih_otomatis.sh ;;
+        13) bash modules/kata_islami.sh ;;
+        14) bash modules/target_ibadah.sh ;;
+        15) bash modules/pengingat_sholat.sh ;;
+        16) bash modules/ramadhan_sultan.sh ;;
+        17) bash modules/game_ramadhan.sh ;;
+        18) bash modules/ramadhan_adventure.sh ;;
+        19) bash modules/ramadhan_snake.sh ;;
+        20) bash modules/ramadhan_hub.sh ;;
+        0) echo "Keluar..."; exit ;;
+        *) echo "Pilihan salah!"; sleep 1 ;;
     esac
 
-    # Bersihkan layar sebelum loop ulang
+    # Bersihkan layar & tampilkan logo lagi sebelum menu berikutnya
     clear
     echo -e $green
     echo "██████╗  █████╗ ███╗   ███╗"
@@ -84,4 +83,4 @@ while true; do
     echo ""
     echo "🌙 ROMADHON TERMINAL MENU 🌙"
     echo "========================================"
-done
+done   
