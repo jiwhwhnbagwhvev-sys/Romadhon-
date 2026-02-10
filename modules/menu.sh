@@ -123,7 +123,7 @@ bash start.sh
 ;;
 
 10)
-bash modules/azan.sh
+bash modules/ramadhan_azan.sh
 ;;
 
 11)
