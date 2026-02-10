@@ -1,0 +1,24 @@
+{
+  "modules": [
+    { "id": 1, "name": "Menu Utama", "description": "Menu utama Ramadhan Terminal", "file": "menu.sh" },
+    { "id": 2, "name": "Web Localhost", "description": "Halaman web dakwah & hub Ramadhan", "file": "web.sh" },
+    { "id": 3, "name": "Ramadhan Sultan", "description": "Mini-game Ramadhan interaktif Sultan Edition", "file": "ramadhan_sultan.sh" },
+    { "id": 4, "name": "Game Ramadhan", "description": "Mini-game seru Ramadhan", "file": "game_ramadhan.sh" },
+    { "id": 5, "name": "Ramadhan Adventure", "description": "Petualangan Ramadhan kumpulkan pahala", "file": "ramadhan_adventure.sh" },
+    { "id": 6, "name": "Ramadhan Snake", "description": "Game ular tangga Ramadhan", "file": "ramadhan_snake.sh" },
+    { "id": 7, "name": "Ramadhan Story", "description": "Story mode interaktif Ramadhan", "file": "ramadhan_story.sh" },
+    { "id": 8, "name": "Ramadhan Azan", "description": "Alarm & notifikasi azan otomatis", "file": "ramadhan_azan.sh" },
+    { "id": 9, "name": "Ramadhan Chat", "description": "Chat room lokal untuk Ramadhan", "file": "ramadhan_chat.sh" },
+    { "id": 10, "name": "Ramadhan Hub", "description": "Ultimate hub: semua mini-game + chat + azan", "file": "ramadhan_hub.sh" },
+    { "id": 11, "name": "Niat Puasa", "description": "Tampilkan niat puasa", "file": "niat_puasa.sh" },
+    { "id": 12, "name": "Doa Berbuka", "description": "Tampilkan doa berbuka", "file": "doa_berbuka.sh" },
+    { "id": 13, "name": "Jadwal Imsak & Buka", "description": "Tampilkan jadwal imsak dan buka puasa", "file": "jadwal_imsak.sh" },
+    { "id": 14, "name": "Motivasi Ramadhan", "description": "Pesan motivasi Ramadhan harian", "file": "motivasi_ramadhan.sh" },
+    { "id": 15, "name": "Dzikir Digital", "description": "Tasbih otomatis digital", "file": "dzikir_digital.sh" },
+    { "id": 16, "name": "Cek Jam Sekarang", "description": "Tampilkan jam saat ini", "file": "cek_jam.sh" },
+    { "id": 17, "name": "Info Ramadhan", "description": "Informasi penting Ramadhan", "file": "info_ramadhan.sh" },
+    { "id": 18, "name": "Hadis Puasa", "description": "Kumpulan hadis tentang puasa", "file": "hadis_puasa.sh" },
+    { "id": 19, "name": "Tips Puasa Kuat", "description": "Tips agar puasa lebih kuat dan lancar", "file": "tips_puasa.sh" },
+    { "id": 20, "name": "Alarm Azan", "description": "Alarm azan lengkap semua waktu sholat", "file": "alarm_azan.sh" }
+  ]
+}
